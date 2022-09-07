@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{url_for('static', filename = 'style/info.css')}}">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
+        <script src="{{url_for('static', filename = 'js/info.js')}}"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"/>
+        <title>Info</title>
+    </head>   
+    <body>
+        <div id="top_bar"> 
+            <p id="user_name" onclick="logout()">{{ username }}</p>
+            <i class="fas fa-sign-out-alt" id="exit" onclick="logout()"></i>
+            <h1 id="title" onclick="home()">MusiCreator</h1>
+            <i class="fas fa-home" id="home" onclick="home()"></i>
+        </div>  
+        <hr> 
+        <br>
+        <div>
+            <img src="static/images/drumset.png" width="444" height="306" align="right">
+            <h1 class="titles" id="drums_title">Drums</h1>
+            <p id="p1">The drum set is a collection of drums: snare, bass, toms and cymbals: hi-hat, crash, ride.<br>
+            Drumming, whether playing accompaniment of voices and other instruments or doing a drum solo, consists of two main elements:<br>
+            a groove which sets the basic time-feel and provides a rhythmic framework for the song, 
+            and drum fills which provide variety and add interest to the drum sound.</p>
+        </div>
+        <br>
+        <div>
+            <h1 class="titles" id="guitar_title">Guitar</h1>
+            <img src="static/images/guitar.png" width="603" height="200" align="left">
+            <p id="p2">The guitar is a fretted musical instrument that typically has six strings.<br> 
+            The sound of the acoustic guitar is projected acoustically, by means of a resonant chamber on the instrument, 
+            and the sound of the electric guitar is amplified by an electronic pickup and an amplifier.</p>
+        </div>
+        <br>
+        <div>
+            <h1 class="titles" id="bass_title">Bass</h1>
+            <img src="static/images/bass.png" width="621" height="201" align="right">
+            <p id="p3">The bass guitar is the lowest-pitched member of the guitar family.<br>
+            It is a plucked string instrument similar in appearance and construction to an electric or an acoustic guitar, but with a longer neck and scale length, and typically four strings.<br>
+            The bass is played primarily with the fingers or thumb, or sometimes with a pick.</p>
+        </div>
+        <br>
+        <div>
+            <img src="static/images/metronome.png" width="300" height="480" align="left">
+            <h1 class="titles">Basic Guide</h1>
+            <p id="p4">On this website, you can create musical tracks and songs. You may create each musical instrument track separately and then combine them.<br>
+            In the 'create' page you'll find a matrix that represents a single bar divided to 16th notes, then chose the wanted bpm (slow: 40-70, medium: 80-110, fast: 120-180).<br>
+            </p>
+        </div>
+        <br>
+        <br>
+        <br>
+    </body>
+ </html>

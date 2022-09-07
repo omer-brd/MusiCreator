@@ -1,0 +1,25 @@
+---- importing the module ----
+from pydub import AudioSegment
+
+
+---- importing the tracks ----
+track1 = AudioSegment.from_file("path.wav")
+track2 = AudioSegment.from_file("path.wav")
+
+
+---- layering 2 tracks together ----
+# the length of the track is the length of the track in the brackets
+layered = track1.overlay(track2)
+
+
+---- combining 2 tracks together ----
+# the first track will be played first
+combined = track1.append(track2)
+
+
+---- streching track to match bpm ----
+# default 100 bpm
+def speed_change(track, speed=1.00): 
+    new_bpm_track = track._spawn(track.raw_data, overrides={"frame_rate": int(track.frame_rate * speed)})
+    return new_bpm_track.set_frame_rate(track.frame_rate)
+    slow_track = speed_change(track1, 0.75) # 75 bpm

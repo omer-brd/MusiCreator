@@ -1,0 +1,104 @@
+html {
+    height: 100%;
+}
+body {
+    margin: 0; 
+    height: 100%;
+    background-image: url('/static/images/back2.svg');
+    background-position: center;
+    background-size: 240%;
+}
+#top_bar {
+    background-color: transparent;
+    text-align: center;
+    color: #601872;
+    height: 19%;
+}
+#user_name {
+    margin-right: 450px; 
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Verdana";
+    font-size: 30px;
+    color: #601872;
+}
+#user_name:hover {
+    cursor: pointer;
+}
+#title {
+    margin-right: 500px; 
+    text-align: center;
+    display: inline-block;
+    font-family: "Verdana", "Geneva", "sans-serif";
+    font-size: 70px;
+    vertical-align: middle;
+}
+#title:hover {
+    cursor: pointer;
+}
+i {
+    font-size: 80px;
+}
+hr {
+    width: 90%;
+    border: 0;
+    height: 2px;
+    color: #601872;
+    background-image: linear-gradient(to right, rgba(138, 43, 226, 0), rgba(138, 43, 226, 0.75), rgba(138, 43, 226, 0));
+}
+#home {
+    font-size: 50px;
+    position: absolute;
+    top: 60px;
+    right: 215px;
+}
+#exit {
+    font-size: 30px;
+    position: absolute;
+    top: 77px;
+    left: 60px;
+}
+i:hover {
+    cursor: pointer;
+}
+.titles {   
+    text-align: center;
+    font-size: 60px;
+    font-family: "Century Gothic";
+    color: blueviolet;   
+}
+p {
+    font-size: 30px;
+    font-family: "Century Gothic";
+    color: white;  
+}
+#p1 {
+    width: 60%;
+    margin-left: 80px;
+}
+#p2 {
+    width: 60%;
+    margin-left: 660px;
+}
+#p3 {
+    width: 60%;
+    margin-left: 80px;
+}
+#p4 {
+    width: 60%;
+    margin-left: 660px;
+}
+#bass_title {
+    width: 50%;
+}
+#drums_title {
+    width: 65%;
+}
+#guitar_title {
+    width: 70%;
+    text-align: right;
+}
+img {
+    margin-right: 100px;
+    margin-left: 100px;
+}

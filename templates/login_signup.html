@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{url_for('static', filename = 'style/login_signup.css')}}">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
+        <script src="{{url_for('static', filename = 'js/login_signup.js')}}"></script>
+        <title>Login/SignUp</title>
+    </head>   
+    <body>
+       <div id="top_bar"> 
+           <p id="user_name">{{ username }}</p>
+           <h1 id="title">MusiCreator</h1>
+       </div>  
+       <hr> 
+       <table>
+            <tr>    
+                <td>
+                    <h1 id="signup">Sign Up</h1>
+                    <label for="username1">Username: </label>
+                    <input type="text" id="username1" name="username1" class="inputs" onkeyup="changeBorderColor('username1')">
+                    <br>
+                    <label id="username1_alert" class="alerts"></label>
+                    <br>
+                    <br>
+                    <label for="password1">Password: </label>
+                    <input type="password" id="password1" name="password1" class="inputs" onkeyup="changeBorderColor('password1')">
+                    <br>
+                    <label id="password1_alert" class="alerts"></label>
+                    <br>
+                    <br>
+                    <button id="save2" class="submits" onclick="signup()">Sign Up</button> 
+                </td>
+                <td>
+                    <h1 id="login">Login</h1>
+                    <label for="username2">Username: </label>
+                    <input type="text" id="username2" name="username2" class="inputs" onkeyup="changeBorderColor('username2')"> 
+                    <br>
+                    <label id="username2_alert" class="alerts"></label>
+                    <br>
+                    <br>
+                    <label for="password2">Password: </label>
+                    <input type="password" id="password2" name="password2" class="inputs" onkeyup="changeBorderColor('password2')">
+                    <br>
+                    <label id="password2_alert" class="alerts"></label>
+                    <br>
+                    <br>
+                    <button id="save1" class="submits" onclick="login()">Login</button> 
+                </td>
+            </tr>
+       </table>
+    </body>
+ </html>

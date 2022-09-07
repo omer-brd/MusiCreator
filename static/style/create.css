@@ -1,0 +1,222 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    margin: 0; 
+    height: 100%;
+    background-image: url('/static/images/back.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family: "Verdana";
+}
+#top_bar {
+    background-color: transparent;
+    text-align: center;
+    color: #601872;
+    height: 19%;
+}
+#user_name {
+    margin-right: 450px; 
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Verdana";
+    font-size: 30px;
+}
+#user_name:hover {
+    cursor: pointer;
+}
+#title {
+    margin-right: 500px; 
+    text-align: center;
+    display: inline-block;
+    font-family: "Verdana", "Geneva", "sans-serif";
+    font-size: 70px;
+    vertical-align: middle;
+}
+#title:hover {
+    cursor: pointer;
+}
+hr {
+    width: 90%;
+    border: 0;
+    height: 2px;
+    color: #601872;
+    background-image: linear-gradient(to right, rgba(138, 43, 226, 0), rgba(138, 43, 226, 0.75), rgba(138, 43, 226, 0));
+}
+#drums, #guitar, #bass {
+    margin: auto;
+    width: 80%;
+    height: 60%;
+}
+table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    color: #601872;
+    font-family: "Verdana";
+}
+td {
+    border: 1px solid white;
+    width: 5.625%;
+}
+table:hover {
+    cursor: url('/static/images/drumstick.png') 15 15, pointer;
+}
+select, input {
+    outline: none;
+    font-size: 20px;
+    margin-right: 140px;
+}
+label {
+    font-size: 20px;
+}
+#dice {
+    color: white;
+    font-size: 40px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    display: inline-block;
+}
+#dice:hover {
+    cursor: pointer;
+}
+#reset {
+    color: white;
+    font-size: 40px;
+    display: inline-block;
+    margin-right: 40px;
+}
+#reset:hover {
+    cursor: pointer;
+}
+#play {
+    color: white;
+    font-size: 40px;
+    display: inline-block;
+    margin-right: 40px;
+}
+#play:hover {
+    cursor: pointer;
+}
+#inst_label {
+    margin-left: 150px;
+}
+.bottom_row {
+    border: 0px solid;
+}
+.left_row {
+    border: 0px solid;
+    width: 10%;
+}
+.clicked {
+    background-color: #940FE0;
+}
+.unclicked {
+    background-color: transparent;
+}
+.inputs {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #601872;
+    color: #601872;
+}
+#name, #bpm {
+    text-indent: 8px;
+    caret-color: #601872;
+}
+#save {
+    border-radius: 20px;
+    font-size: 20px;
+    background: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #601872;
+    color: #601872;
+    font-family: "Verdana";
+    width: 80px;
+}
+#save:hover {
+    cursor: pointer;
+}
+.spin1 {
+    -webkit-animation: fa-spin 2s infinite linear;
+    animation: fa-spin 2s infinite linear;
+}
+.spin2 {
+    -webkit-animation: spin-counter 2s infinite linear;
+    -moz-animation: spin-counter 2s infinite linear;
+    -o-animation: spin-counter 2s infinite linear;
+    animation: spin-counter 2s infinite linear;
+}
+@-moz-keyframes spin-counter {
+    0% {
+        -moz-transform: rotate(359deg);
+    }
+    100% {
+        -moz-transform: rotate(0deg);
+    }
+}
+@-webkit-keyframes spin-counter {
+    0% {
+        -webkit-transform: rotate(359deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+@-o-keyframes spin-counter {
+    0% {
+        -o-transform: rotate(359deg);
+    }
+    100% {
+        -o-transform: rotate(0deg);
+    }
+}
+@-ms-keyframes spin-counter {
+    0% {
+        -ms-transform: rotate(359deg);
+    }
+    100% {
+        -ms-transform: rotate(0deg);
+    }
+}
+@keyframes spin-counter {
+    0% {
+        transform: rotate(359deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+#book {
+    font-size: 50px;
+    position: absolute;
+    top: 60px;
+    right: 120px;
+}
+#home {
+    font-size: 50px;
+    position: absolute;
+    top: 60px;
+    right: 215px;
+}
+#exit {
+    font-size: 30px;
+    position: absolute;
+    top: 77px;
+    left: 60px;
+}
+i:hover {
+    cursor: pointer;
+}
+.greentd {
+    background-color: green;
+}
+.transparenttd {
+    background-color: transparent;
+}

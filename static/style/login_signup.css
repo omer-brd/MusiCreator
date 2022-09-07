@@ -1,0 +1,111 @@
+html {
+    height: 100%;
+}
+body {
+    margin:0; 
+    height:100%;
+    background-image: url('/static/images/back.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#top_bar {
+    background-color: transparent;
+    text-align: center;
+    color: #601872;
+    height: 19%;
+}
+#user_name {
+    margin-right: 450px; 
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Verdana";
+    font-size: 30px;
+}
+#user_name:hover {
+    cursor: pointer;
+}
+#title {
+    margin-right: 500px; 
+    text-align: center;
+    display: inline-block;
+    font-family: "Verdana", "Geneva", "sans-serif";
+    font-size: 70px;
+    vertical-align: middle;
+}
+#title:hover {
+    cursor: default;
+}
+table {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+    height: 79%;
+    font-size: 40px;
+    font-family: "Century Gothic";
+    border-spacing: 60px;
+}
+td {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: 8px solid blueviolet;
+    color: blueviolet;    
+    border-radius: 30px;
+    width: 50%;
+}
+i {
+    font-size: 80px;
+}
+hr {
+    width: 90%;
+    border: 0;
+    height: 2px;
+    color: #601872;
+    background-image: linear-gradient(to right, rgba(138, 43, 226, 0), rgba(138, 43, 226, 0.75), rgba(138, 43, 226, 0));
+}
+.inputs {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #601872;
+    color: #601872;
+    outline: none;
+    font-size: 30px;
+    text-indent: 8px;
+    caret-color: #601872;
+    font-family: "Century Gothic";
+}
+label {
+    font-size: 30px;
+}
+.submits {
+    border-radius: 20px;
+    font-size: 30px;
+    background: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #601872;
+    color: #601872;
+    font-family: "Century Gothic";
+}
+.submits:hover {
+    cursor: pointer;
+}
+#save1 {
+    width: 120px;
+}
+#save2 {
+    width: 160px;
+}
+.alerts {
+    color: red;
+}
+#signup:hover {
+    cursor: default;
+}
+#login:hover {
+    cursor: default;
+}

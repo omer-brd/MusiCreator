@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{url_for('static', filename = 'style/home.css')}}">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
+        <script src="{{url_for('static', filename = 'js/home.js')}}"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"/>
+        <title>Home</title>
+    </head>   
+    <body>
+       <div id="top_bar"> 
+           <p id="user_name" onclick="logout()">{{ username }}</p>
+           <i class="fas fa-sign-out-alt" id="exit" onclick="logout()"></i>
+           <h1 id="title">MusiCreator</h1>
+       </div>  
+       <hr> 
+       <table>
+            <tr>    
+                <td onclick="library()">
+                    <h1 id="library">Library</h1>
+                    <i class="fas fa-book-open"></i>
+                </td>
+                <td onclick="info()">
+                    <h1 id="info">Info</h1> 
+                    <i class="fas fa-info"></i>
+                </td>
+                <td onclick="create()">
+                    <h1 id="create">Create</h1> 
+                    <i class="fas fa-plus"></i>
+                </td>
+            </tr>
+       </table>
+    </body>
+ </html>

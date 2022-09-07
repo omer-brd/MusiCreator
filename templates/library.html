@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{url_for('static', filename = 'style/library.css')}}">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
+        <script src="{{url_for('static', filename = 'js/library.js')}}"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"/>
+        <title>Library</title>
+    </head>   
+    <body onload="start()">
+      <div id="top_bar"> 
+        <p id="user_name" onclick="logout()">{{ username }}</p>
+        <i class="fas fa-sign-out-alt" id="exit" onclick="logout()"></i>
+        <h1 id="title" onclick="home()">MusiCreator</h1>
+        <i class="fas fa-plus" id="plus" onclick="create()"></i>
+        <i class="fas fa-home" id="home" onclick="home()"></i>
+      </div>  
+      <hr> 
+      <br>
+      <br>
+      <div id="tabs_container">
+        <button onclick="openTab('tracks')" id="tracks_btn" class="tabs active">Tracks</button>
+        <button onclick="openTab('songs')" id="songs_btn" class="tabs inactive">Songs</button>
+      </div>
+      <div id="songs">
+        <div class="fading-circle" >
+          <div class="circle1 circle"></div>
+          <div class="circle2 circle"></div>
+          <div class="circle3 circle"></div>
+          <div class="circle4 circle"></div>
+          <div class="circle5 circle"></div>
+          <div class="circle6 circle"></div>
+          <div class="circle7 circle"></div>
+          <div class="circle8 circle"></div>
+          <div class="circle9 circle"></div>
+          <div class="circle10 circle"></div>
+          <div class="circle11 circle"></div>
+          <div class="circle12 circle"></div>
+        </div>
+        <table id="songs_tbl">
+        </table>
+      </div>
+      <div id="tracks">
+        <div class="fading-circle" >
+          <div class="circle1 circle"></div>
+          <div class="circle2 circle"></div>
+          <div class="circle3 circle"></div>
+          <div class="circle4 circle"></div>
+          <div class="circle5 circle"></div>
+          <div class="circle6 circle"></div>
+          <div class="circle7 circle"></div>
+          <div class="circle8 circle"></div>
+          <div class="circle9 circle"></div>
+          <div class="circle10 circle"></div>
+          <div class="circle11 circle"></div>
+          <div class="circle12 circle"></div>
+        </div>
+        <table id="tracks_tbl">
+        </table>
+      </div>
+      </br>
+      </br>
+      <label id="lbl" for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <button id="add" onclick="add2()">Add</button>    
+      <button id="overlay" onclick="overlay2()">Overlay</button> 
+    </body>
+ </html>
